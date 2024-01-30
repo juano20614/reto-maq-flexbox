@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    font-family: 'Lato', sans-serif;
+    width: 550px;
+  }
+
+  .container {
+    background: turquoise;
+    width: 180px;
+    height: 180px;
+    display: flex;
+  }
+
+  #A{
+      justify-content: left;
+  }
+
+  #B{
+      justify-content: center;
+  }
+  #C{
+      justify-content: right;
+  }
+
+  .A1,.A2,.A3{
+    background-color: antiquewhite;
+    width: 70px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+.B1,.B2,.B3{
+    background-color: rgb(245, 176, 184);
+    width: 70px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+.C1,.C2,.C3{
+    background-color: rgb(179, 246, 255);
+    width: 70px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+.A1,.B1,.C1{
+    align-self: flex-start;
+}
+
+.A2,.B2,.C2{
+    align-self: center;
+}
+
+.A3,.B3,.C3{
+    align-self: flex-end;
+}
